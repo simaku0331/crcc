@@ -5,6 +5,14 @@
     box-sizing: border-box;
     font-family: "Noto Sans TC", sans-serif;
 }
+details {
+    color:#ffffff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+details:hover {
+    color: #0eff21;
+}
 
 /* HTML背景動畫 */
 html {
@@ -22,6 +30,9 @@ html {
 
 /* 圖片通用樣式 */
 img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 20px;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -113,14 +124,15 @@ section {
 }
 
 h2, h3 {
+    font-size: 25px;
     color: aliceblue;
     margin: 10px 0;
 }
 
 p {
     color: aliceblue;
-    margin: 10px 0;
-    font-size: 20px;
+    margin: 10px 30px;
+    font-size: 30px;
 }
 
 /* 媒體查詢：當屏幕寬度小於768px時應用以下樣式 */
@@ -143,11 +155,11 @@ p {
     }
     
     h2, h3 {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
 	img {
